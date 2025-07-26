@@ -1,0 +1,325 @@
+--------- beginning of crash
+07-01 21:39:08.100 25369 25386 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-01 21:39:08.100 25369 25386 F DEBUG   : Build fingerprint: 'samsung/a22nnxx/a22:13/TP1A.220624.014/A225FXXSBDYE2:user/release-keys'
+07-01 21:39:08.100 25369 25386 F DEBUG   : Revision: '3'
+07-01 21:39:08.100 25369 25386 F DEBUG   : ABI: 'arm64'
+07-01 21:39:08.100 25369 25386 F DEBUG   : Processor: '-1'
+07-01 21:39:08.100 25369 25386 F DEBUG   : Timestamp: 2025-07-01 21:39:06.534908852+0530
+07-01 21:39:08.100 25369 25386 F DEBUG   : Process uptime: 287s
+07-01 21:39:08.100 25369 25386 F DEBUG   : Cmdline: com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:5
+07-01 21:39:08.100 25369 25386 F DEBUG   : pid: 25369, tid: 25386, name: binder:25369_3  >>> com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:5 <<<
+07-01 21:39:08.100 25369 25386 F DEBUG   : uid: 90005
+07-01 21:39:08.100 25369 25386 F DEBUG   : tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+07-01 21:39:08.100 25369 25386 F DEBUG   : signal 0 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr --------
+07-01 21:39:08.100 25369 25386 F DEBUG   : Cause: null pointer dereference
+07-01 21:39:08.101 25369 25386 F DEBUG   :     x0  0000000000000001  x1  000000740000c008  x2  0000007400030040  x3  000000a87e5a011e
+07-01 21:39:08.101 25369 25386 F DEBUG   :     x4  0000000001c9c380  x5  0000000000001f40  x6  0000000000000000  x7  00000000146e3784
+07-01 21:39:08.101 25369 25386 F DEBUG   :     x8  000000007fffffff  x9  8000000000000000  x10 0000000000000000  x11 000000a87e54ea80
+07-01 21:39:08.101 25369 25386 F DEBUG   :     x12 0000000000000018  x13 0000000068640822  x14 001e2de5f3c7bcb8  x15 00001ca1a09d912d
+07-01 21:39:08.101 25369 25386 F DEBUG   :     x16 0000000000000001  x17 0000007c026b0d20  x18 0000007b29034000  x19 0000000000000000
+07-01 21:39:08.101 25369 25386 F DEBUG   :     x20 000000740000c000  x21 0000000001c9c380  x22 0000007b541fafd0  x23 000000a87e5a011e
+07-01 21:39:08.101 25369 25386 F DEBUG   :     x24 0000007afb85b000  x25 0000007b541fb140  x26 0000007b541fb144  x27 0000007b541fb140
+07-01 21:39:08.101 25369 25386 F DEBUG   :     x28 0000007b541fb040  x29 0000007b541faf80
+07-01 21:39:08.101 25369 25386 F DEBUG   :     lr  0000007af6731b68  sp  0000007b541fabd0  pc  0000007af6731b74  pst 0000000080001000
+07-01 21:39:08.101 25369 25386 F DEBUG   : backtrace:
+07-01 21:39:08.101 25369 25386 F DEBUG   :       #00 pc 00000000052f6b74  /data/app/~~8tUHBgNLgRYJGNEUadcWkw==/com.google.android.trichromelibrary_715111733-z45_WaLDXdBYT60E5S4qHw==/base.apk!libmonochrome_64.so (BuildId: 9570d3ab2807ff75b042dbf79539f60b55e2746c)
+07-01 21:39:08.101 25369 25386 F DEBUG   :       #01 pc 0000000004037198  /data/app/~~8tUHBgNLgRYJGNEUadcWkw==/com.google.android.trichromelibrary_715111733-z45_WaLDXdBYT60E5S4qHw==/base.apk!libmonochrome_64.so (BuildId: 9570d3ab2807ff75b042dbf79539f60b55e2746c)
+07-01 21:39:08.101 25369 25386 F DEBUG   :       #02 pc 0000000000461754  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+148) (BuildId: 4bf4747707ca903605931dd6b3d0480c)
+07-01 21:39:08.101 25369 25386 F DEBUG   :       #03 pc 0000000000209398  /apex/com.android.art/lib64/libart.so (nterp_helper+152) (BuildId: 4bf4747707ca903605931dd6b3d0480c)
+07-01 21:39:08.101 25369 25386 F DEBUG   :       #04 pc 00000000000e8cb4  /data/app/~~IKyCsmBJnrwS-YNUbQQSlA==/com.android.chrome-Fk1iZlMKkTwGSNoxgsibRw==/base.apk
+07-01 21:39:08.101 25369 25386 F DEBUG   :       #05 pc 000000000020a254  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 4bf4747707ca903605931dd6b3d0480c)
+07-01 21:39:08.101 25369 25386 F DEBUG   :       #06 pc 00000000000e89c6  /data/app/~~IKyCsmBJnrwS-YNUbQQSlA==/com.android.chrome-Fk1iZlMKkTwGSNoxgsibRw==/base.apk
+07-01 21:39:08.101 25369 25386 F DEBUG   :       #07 pc 0000000000721ef8  /system/framework/arm64/boot-framework.oat (android.os.Binder.execTransactInternal+1016) (BuildId: 4f687e16b5b9a376e216a45a7254745c617a3634)
+07-01 21:39:08.101 25369 25386 F DEBUG   :       #08 pc 00000000007219e0  /system/framework/arm64/boot-framework.oat (android.os.Binder.execTransact+304) (BuildId: 4f687e16b5b9a376e216a45a7254745c617a3634)
+07-01 21:39:08.101 25369 25386 F DEBUG   :       #09 pc 0000000000457d6c  /apex/com.android.art/lib64/libart.so (art_quick_invoke_stub+556) (BuildId: 4bf4747707ca903605931dd6b3d0480c)
+07-01 21:39:08.101 25369 25386 F DEBUG   :       #10 pc 00000000004ed728  /apex/com.android.art/lib64/libart.so (art::JValue art::InvokeVirtualOrInterfaceWithVarArgs<art::ArtMethod*>(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, art::ArtMethod*, std::__va_list)+856) (BuildId: 4bf4747707ca903605931dd6b3d0480c)
+07-01 21:39:08.101 25369 25386 F DEBUG   :       #11 pc 00000000005e8324  /apex/com.android.art/lib64/libart.so (art::JNI<false>::CallBooleanMethodV(_JNIEnv*, _jobject*, _jmethodID*, std::__va_list)+184) (BuildId: 4bf4747707ca903605931dd6b3d0480c)
+07-01 21:39:08.101 25369 25386 F DEBUG   :       #12 pc 00000000000c47a8  /system/lib64/libandroid_runtime.so (_JNIEnv::CallBooleanMethod(_jobject*, _jmethodID*, ...)+120) (BuildId: 30791b763604abc4513e3e36cb5d57e9)
+07-01 21:39:08.101 25369 25386 F DEBUG   :       #13 pc 000000000017a5fc  /system/lib64/libandroid_runtime.so (JavaBBinder::onTransact(unsigned int, android::Parcel const&, android::Parcel*, unsigned int)+156) (BuildId: 30791b763604abc4513e3e36cb5d57e9)
+07-01 21:39:08.101 25369 25386 F DEBUG   :       #14 pc 0000000000051a4c  /system/lib64/libbinder.so (android::BBinder::transact(unsigned int, android::Parcel const&, android::Parcel*, unsigned int)+236) (BuildId: 95b4c1b0a8f1318a116bf5674604d87d)
+07-01 21:39:08.101 25369 25386 F DEBUG   :       #15 pc 000000000005cbf8  /system/lib64/libbinder.so (android::IPCThreadState::executeCommand(int)+1016) (BuildId: 95b4c1b0a8f1318a116bf5674604d87d)
+07-01 21:39:08.102 25369 25386 F DEBUG   :       #16 pc 000000000005c730  /system/lib64/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+160) (BuildId: 95b4c1b0a8f1318a116bf5674604d87d)
+07-01 21:39:08.102 25369 25386 F DEBUG   :       #17 pc 000000000005cfd4  /system/lib64/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+68) (BuildId: 95b4c1b0a8f1318a116bf5674604d87d)
+07-01 21:39:08.102 25369 25386 F DEBUG   :       #18 pc 000000000008ba9c  /system/lib64/libbinder.so (android::PoolThread::threadLoop()+444) (BuildId: 95b4c1b0a8f1318a116bf5674604d87d)
+07-01 21:39:08.102 25369 25386 F DEBUG   :       #19 pc 0000000000013550  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+416) (BuildId: 62128a51f31d41bbd0d14333ccf95e95)
+07-01 21:39:08.102 25369 25386 F DEBUG   :       #20 pc 00000000000cd7bc  /system/lib64/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+140) (BuildId: 30791b763604abc4513e3e36cb5d57e9)
+07-01 21:39:08.102 25369 25386 F DEBUG   :       #21 pc 00000000000fd040  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+208) (BuildId: 4d6e56b2321dd2889f771482b268b706)
+07-01 21:39:08.102 25369 25386 F DEBUG   :       #22 pc 000000000008f5e0  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64) (BuildId: 4d6e56b2321dd2889f771482b268b706)
+07-03 16:19:31.165 27947 28082 E AndroidRuntime: FATAL EXCEPTION: slack-instrumented-io-54
+07-03 16:19:31.165 27947 28082 E AndroidRuntime: Process: com.Slack, PID: 27947
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: FATAL EXCEPTION: main
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: Process: com.android.settings, PID: 17914
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.android.settings/com.android.settings.SubSettings}: java.lang.RuntimeException: Failed to call observer method
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:5378)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:5444)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:54)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at android.app.servertransaction.ActivityTransactionItem.execute(ActivityTransactionItem.java:45)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:176)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:97)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2574)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:226)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:313)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:8762)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:604)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1067)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: Caused by: java.lang.RuntimeException: Failed to call observer method
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at androidx.lifecycle.ClassesInfoCache$MethodReference.invokeCallback(ClassesInfoCache.java:232)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at androidx.lifecycle.ClassesInfoCache$CallbackInfo.invokeMethodsForEvent(ClassesInfoCache.java:199)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at androidx.lifecycle.ClassesInfoCache$CallbackInfo.invokeCallbacks(ClassesInfoCache.java:191)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at androidx.lifecycle.ReflectiveGenericLifecycleObserver.onStateChanged(ReflectiveGenericLifecycleObserver.java:40)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at androidx.lifecycle.LifecycleRegistry$ObserverWithState.dispatchEvent(LifecycleRegistry.java:354)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at androidx.lifecycle.LifecycleRegistry.forwardPass(LifecycleRegistry.java:265)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at androidx.lifecycle.LifecycleRegistry.sync(LifecycleRegistry.java:307)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at androidx.lifecycle.LifecycleRegistry.moveToState(LifecycleRegistry.java:148)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at androidx.lifecycle.LifecycleRegistry.handleLifecycleEvent(LifecycleRegistry.java:134)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at com.android.settingslib.core.lifecycle.ObservablePreferenceFragment.onResume(ObservablePreferenceFragment.java:87)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at com.android.settings.core.InstrumentedPreferenceFragment.onResume(InstrumentedPreferenceFragment.java:128)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at com.android.settings.SettingsPreferenceFragment.onResume(SettingsPreferenceFragment.java:410)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at com.android.settings.dashboard.DashboardFragment.onResume(DashboardFragment.java:338)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at com.samsung.android.settings.wifi.details.WifiNetworkModifyFragment.onResume(WifiNetworkModifyFragment.java:132)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at androidx.fragment.app.Fragment.performResume(Fragment.java:3119)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at androidx.fragment.app.FragmentStateManager.resume(FragmentStateManager.java:605)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at androidx.fragment.app.FragmentStateManager.moveToExpectedState(FragmentStateManager.java:285)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at androidx.fragment.app.FragmentStore.moveToExpectedState(FragmentStore.java:115)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at androidx.fragment.app.FragmentManager.moveToState(FragmentManager.java:1374)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at androidx.fragment.app.FragmentManager.dispatchStateChange(FragmentManager.java:2841)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at androidx.fragment.app.FragmentManager.dispatchResume(FragmentManager.java:2798)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at androidx.fragment.app.FragmentController.dispatchResume(FragmentController.java:284)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at androidx.fragment.app.FragmentActivity.onResumeFragments(FragmentActivity.java:434)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at androidx.fragment.app.FragmentActivity.onPostResume(FragmentActivity.java:423)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at androidx.appcompat.app.AppCompatActivity.onPostResume(AppCompatActivity.java:242)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:8759)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:5351)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	... 13 more
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to read from field 'java.util.BitSet android.net.wifi.WifiConfiguration.allowedKeyManagement' on a null object reference in method 'void com.samsung.android.settings.wifi.details.WifiModifyPreferenceController.updateSecurity()'
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at com.samsung.android.settings.wifi.details.WifiModifyPreferenceController.updateSecurity(WifiModifyPreferenceController.java:1212)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at com.samsung.android.settings.wifi.details.WifiModifyPreferenceController.onResume(WifiModifyPreferenceController.java:341)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at com.android.settingslib.core.lifecycle.Lifecycle.onResume(Lifecycle.java:142)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at com.android.settingslib.core.lifecycle.Lifecycle.-$$Nest$monResume(Unknown Source:0)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at com.android.settingslib.core.lifecycle.Lifecycle$LifecycleProxy.onLifecycleEvent(Lifecycle.java:225)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	at androidx.lifecycle.ClassesInfoCache$MethodReference.invokeCallback(ClassesInfoCache.java:228)
+07-07 22:31:29.738 17914 17914 E AndroidRuntime: 	... 39 more
+07-10 04:12:06.512   604   604 F libc    : crash_dump helper failed to exec, or was killed
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: FATAL EXCEPTION: main
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: Process: com.transitfe, PID: 9515
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.transitfe/com.transitfe.MainActivity}: androidx.fragment.app.Fragment$l: Unable to instantiate fragment com.swmansion.rnscreens.p: calling Fragment constructor caused an exception
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4169)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4325)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:101)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:135)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:95)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2574)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:226)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:313)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:8762)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:604)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1067)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: Caused by: androidx.fragment.app.Fragment$l: Unable to instantiate fragment com.swmansion.rnscreens.p: calling Fragment constructor caused an exception
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at androidx.fragment.app.Fragment.instantiate(SourceFile:7)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at androidx.fragment.app.i.b(Unknown Source:0)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at androidx.fragment.app.FragmentManager$d.a(Unknown Source:17)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at androidx.fragment.app.FragmentState.a(Unknown Source:2)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at androidx.fragment.app.w.<init>(SourceFile:3)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at androidx.fragment.app.FragmentManager.m1(Unknown Source:245)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at androidx.fragment.app.FragmentManager.n(Unknown Source:141)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at androidx.fragment.app.j.a(Unknown Source:4)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at androidx.fragment.app.FragmentActivity.o(Unknown Source:3)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at androidx.fragment.app.FragmentActivity.i(Unknown Source:0)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at androidx.fragment.app.g.a(Unknown Source:2)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at f.a.c(Unknown Source:20)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at androidx.activity.ComponentActivity.onCreate(Unknown Source:7)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at androidx.fragment.app.FragmentActivity.onCreate(Unknown Source:0)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at com.facebook.react.ReactActivity.onCreate(Unknown Source:0)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at com.transitfe.MainActivity.onCreate(Unknown Source:3)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:8591)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:8570)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1384)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4150)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	... 12 more
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: Caused by: java.lang.reflect.InvocationTargetException
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at androidx.fragment.app.Fragment.instantiate(SourceFile:4)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	... 31 more
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: Caused by: java.lang.IllegalStateException: Screen fragments should never be restored. Follow instructions from https://github.com/software-mansion/react-native-screens/issues/17#issuecomment-424704067 to properly configure your main activity.
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	at com.swmansion.rnscreens.p.<init>(SourceFile:3)
+07-24 21:54:11.682  9515  9515 E AndroidRuntime: 	... 34 more
+--------- beginning of system
+07-25 09:35:43.797  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.snapchat.android|g:SNAP-cdf86ada-8500-5d20-8c53-ac0e9cfae379 ,value= summary : null , child : 1key = 0|com.snapchat.android|-1873460047|null|10252 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.797  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|-953492793|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|-953492793|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.797  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.snapchat.android|g:SNAP-3b138b9a-f136-5932-b549-1f8e0fec30a8 ,value= summary : null , child : 1key = 0|com.snapchat.android|-1944722067|null|10252 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.797  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.instagram.android|g:-1495996954-ig_direct-direct-14474364081;thread_id:340282366841710301244258749952397657909 ,value= summary : null , child : 1key = 0|com.instagram.android|64278|direct|14474364081;thread_id:340282366841710301244258749952397657909|10301 , value =  NotificationData { tag= direct|14474364081;thread_id:340282366841710301244258749952397657909 } , } 
+07-25 09:35:43.797  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|-195663362|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|-195663362|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.797  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.ubercab|5|eca0bba51aa79431c4af6a3de5e11449|10275 ,value= summary : null , child : 1key = 0|com.ubercab|5|eca0bba51aa79431c4af6a3de5e11449|10275 , value =  NotificationData { tag= eca0bba51aa79431c4af6a3de5e11449 } , } 
+07-25 09:35:43.797  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|-1528136651|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|-1528136651|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.797  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.truecaller|2131367317|+918848285621|10288 ,value= summary : null , child : 1key = 0|com.truecaller|2131367317|+918848285621|10288 , value =  NotificationData { tag= +918848285621 } , } 
+07-25 09:35:43.797  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|-1496138755|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|-1496138755|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.797  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|-1587088519|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|-1587088519|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.797  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.ubercab|5|5c6e0ffc881a9595acb0aa2986845b29|10275 ,value= summary : null , child : 1key = 0|com.ubercab|5|5c6e0ffc881a9595acb0aa2986845b29|10275 , value =  NotificationData { tag= 5c6e0ffc881a9595acb0aa2986845b29 } , } 
+07-25 09:35:43.797  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|967923165|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|967923165|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.797  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.rapido.passenger|46153298|null|10483 ,value= summary : null , child : 1key = 0|com.rapido.passenger|46153298|null|10483 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.797  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|-858939570|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|-858939570|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.797  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|2100028453|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|2100028453|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.797  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.snapchat.android|g:mischief_snap~b228810a-fecf-475b-9187-9f98a7af010b-b228810a-fecf-475b-9187-9f98a7af010b ,value= summary : null , child : 1key = 0|com.snapchat.android|-525173526|null|10252 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.797  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|1402819335|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|1402819335|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.797  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.ubercab|8|trip|10275 ,value= summary : null , child : 1key = 0|com.ubercab|8|trip|10275 , value =  NotificationData { tag= trip } , } 
+07-25 09:35:43.798  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|-1173351657|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|-1173351657|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.798  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.truecaller|2131367311|+919778761825|10288 ,value= summary : null , child : 1key = 0|com.truecaller|2131367311|+919778761825|10288 , value =  NotificationData { tag= +919778761825 } , } 
+07-25 09:35:43.798  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.rapido.passenger|47257211|null|10483 ,value= summary : null , child : 1key = 0|com.rapido.passenger|47257211|null|10483 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.798  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.ubercab|1752488657|6b68f562e4c851cf1a499c418ac67858|10275 ,value= summary : null , child : 1key = 0|com.ubercab|1752488657|6b68f562e4c851cf1a499c418ac67858|10275 , value =  NotificationData { tag= 6b68f562e4c851cf1a499c418ac67858 } , } 
+07-25 09:35:43.798  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|31979660|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|31979660|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.798  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.snapchat.android|g:SNAP-44c46489-99b0-5b68-9fbd-6c5e50f6e0bd ,value= summary : null , child : 1key = 0|com.snapchat.android|1380837594|null|10252 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.798  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.ubercab|5|39fde218eba752324d548cad7a2eaae9|10275 ,value= summary : null , child : 1key = 0|com.ubercab|5|39fde218eba752324d548cad7a2eaae9|10275 , value =  NotificationData { tag= 39fde218eba752324d548cad7a2eaae9 } , } 
+07-25 09:35:43.798  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|1541775608|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|1541775608|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.798  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.instagram.android|g:-1495996954-ig_direct-direct-14474364081;thread_id:340282366841710301244259003915702261576 ,value= summary : null , child : 1key = 0|com.instagram.android|64278|direct|14474364081;thread_id:340282366841710301244259003915702261576|10301 , value =  NotificationData { tag= direct|14474364081;thread_id:340282366841710301244259003915702261576 } , } 
+07-25 09:35:43.798  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.ubercab|5|9ea91271783842ea0cb08a59218da2c7|10275 ,value= summary : null , child : 1key = 0|com.ubercab|5|9ea91271783842ea0cb08a59218da2c7|10275 , value =  NotificationData { tag= 9ea91271783842ea0cb08a59218da2c7 } , } 
+07-25 09:35:43.798  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.ubercab|3|69099751-4c5a-4093-8c25-f38f50dabef9|10275 ,value= summary : null , child : 1key = 0|com.ubercab|3|69099751-4c5a-4093-8c25-f38f50dabef9|10275 , value =  NotificationData { tag= 69099751-4c5a-4093-8c25-f38f50dabef9 } , } 
+07-25 09:35:43.798  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.ubercab|3|49aa9ca3-9e46-4008-8568-510e7f0dc762|10275 ,value= summary : null , child : 1key = 0|com.ubercab|3|49aa9ca3-9e46-4008-8568-510e7f0dc762|10275 , value =  NotificationData { tag= 49aa9ca3-9e46-4008-8568-510e7f0dc762 } , } 
+07-25 09:35:43.798  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.rapido.passenger|46149283|null|10483 ,value= summary : null , child : 1key = 0|com.rapido.passenger|46149283|null|10483 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.798  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|-1338515382|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|-1338515382|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.798  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|in.swiggy.android|17987|687cb886ebfc5c821fc2ac3bFTGPAB1P0L0|10273 ,value= summary : null , child : 1key = 0|in.swiggy.android|17987|687cb886ebfc5c821fc2ac3bFTGPAB1P0L0|10273 , value =  NotificationData { tag= 687cb886ebfc5c821fc2ac3bFTGPAB1P0L0 } , } 
+07-25 09:35:43.798  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.snapchat.android|g:voicenote~320b66b4-81c7-4936-96dd-7cb653fc1ec4 ,value= summary : null , child : 1key = 0|com.snapchat.android|1637217691|null|10252 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.798  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.rapido.passenger|666|null|10483 ,value= summary : null , child : 1key = 0|com.rapido.passenger|666|null|10483 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.798  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.ubercab|18|null|10275 ,value= summary : null , child : 1key = 0|com.ubercab|18|null|10275 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.798  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.ubercab|5|d458e6a9381c1286aedfe3a020d4a22a|10275 ,value= summary : null , child : 1key = 0|com.ubercab|5|d458e6a9381c1286aedfe3a020d4a22a|10275 , value =  NotificationData { tag= d458e6a9381c1286aedfe3a020d4a22a } , } 
+07-25 09:35:43.798  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|-706963758|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|-706963758|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.798  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|-1513800346|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|-1513800346|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.798  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|857825768|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|857825768|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.798  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|-2013575208|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|-2013575208|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.798  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|1334984248|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|1334984248|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.799  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.snapchat.android|g:SNAP-624f3e12-f74f-5237-adba-e79c2ce770cf ,value= summary : null , child : 1key = 0|com.snapchat.android|-1649697125|null|10252 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|105599414|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|105599414|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|341449307|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|341449307|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.snapchat.android|g:mischief_snap~dc86bfde-3610-4199-8b97-44344d82df62-dc86bfde-3610-4199-8b97-44344d82df62 ,value= summary : null , child : 1key = 0|com.snapchat.android|1662516490|null|10252 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.snapchat.android|g:SNAP-e1276682-7071-5449-911e-b9b947f70dc1 ,value= summary : null , child : 1key = 0|com.snapchat.android|-1934542697|null|10252 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.truecaller|93932|null|10288 ,value= summary : null , child : 1key = 0|com.truecaller|93932|null|10288 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.truecaller|2131367317|+918138081444|10288 ,value= summary : null , child : 1key = 0|com.truecaller|2131367317|+918138081444|10288 , value =  NotificationData { tag= +918138081444 } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|1533816560|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|1533816560|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|-411503989|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|-411503989|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.rapido.passenger|6434|null|10483 ,value= summary : null , child : 1key = 0|com.rapido.passenger|6434|null|10483 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|-683084507|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|-683084507|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.ubercab|8|a744c4a7eed1995243e84f7031fd5cde|10275 ,value= summary : null , child : 1key = 0|com.ubercab|8|a744c4a7eed1995243e84f7031fd5cde|10275 , value =  NotificationData { tag= a744c4a7eed1995243e84f7031fd5cde } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.ubercab|3|a95c481a-e7bd-4174-bd99-cec36a5d0098|10275 ,value= summary : null , child : 1key = 0|com.ubercab|3|a95c481a-e7bd-4174-bd99-cec36a5d0098|10275 , value =  NotificationData { tag= a95c481a-e7bd-4174-bd99-cec36a5d0098 } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|-1177542570|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|-1177542570|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|351961046|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|351961046|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.snapchat.android|g:SNAP-4b22a1ea-7023-50e1-bc6f-e844336da645 ,value= summary : null , child : 1key = 0|com.snapchat.android|-1787583440|null|10252 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.ubercab|1750851154|1661e379403bd837fa84d41ebe87f33b|10275 ,value= summary : null , child : 1key = 0|com.ubercab|1750851154|1661e379403bd837fa84d41ebe87f33b|10275 , value =  NotificationData { tag= 1661e379403bd837fa84d41ebe87f33b } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.truecaller|2131367360|null|10288 ,value= summary : null , child : 1key = 0|com.truecaller|2131367360|null|10288 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.ubercab|1751785812|40c9151970b7c1f8c2d2528fadf0e3f9|10275 ,value= summary : null , child : 1key = 0|com.ubercab|1751785812|40c9151970b7c1f8c2d2528fadf0e3f9|10275 , value =  NotificationData { tag= 40c9151970b7c1f8c2d2528fadf0e3f9 } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|-559122136|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|-559122136|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|802712338|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|802712338|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.truecaller|86000|null|10288 ,value= summary : null , child : 1key = 0|com.truecaller|86000|null|10288 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = -1|android|34|NetworkPolicy:-1427994003:34|1000 ,value= summary : null , child : 1key = -1|android|34|NetworkPolicy:-1427994003:34|1000 , value =  NotificationData { tag= NetworkPolicy:-1427994003:34 } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|-982895246|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|-982895246|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.snapchat.android|g:SNAP-905be4e3-95b6-535a-a9fe-97ec4e65cf69 ,value= summary : null , child : 1key = 0|com.snapchat.android|-104213543|null|10252 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|1222585450|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|1222585450|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|1469069864|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|1469069864|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingPolicyManager.NotificationGroup: group key = 0|com.linkedin.android|678866915|null|10248 ,value= summary : null , child : 1key = 0|com.linkedin.android|678866915|null|10248 , value =  NotificationData { tag= null } , } 
+07-25 09:35:43.800  1406  1406 D EdgeLightingManager: hideForNotification : isOngoing is false
+07-25 09:35:43.809  1406  1406 D NotificationReminder: removeFromNotiList record com.whatsapp
+07-25 09:35:43.812  1406  1406 D NotificationReminder: removeFromNotiList record com.whatsapp
+07-25 09:35:43.819  1406  4181 D RestrictionPolicy: isScreenCaptureEnabled : ret=true userId=0
+07-25 09:35:43.822  1406  4181 D CoreBackPreview: Window{d24ca40 u0 com.whatsapp/com.whatsapp.Conversation}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@61d8abe, mPriority=0}
+07-25 09:35:43.830  1406  2063 D RestrictionPolicy: isScreenCaptureEnabled : ret=true userId=0
+07-25 09:35:43.831  1406  2063 D WindowManager: makeSurface duration=1 name=com.whatsapp/com.whatsapp.Conversation$_17175
+07-25 09:35:43.834  1406  2063 V WindowManager: Changing focus from null to Window{d24ca40 u0 com.whatsapp/com.whatsapp.Conversation} displayId=0 Callers=com.android.server.wm.RootWindowContainer.updateFocusedWindowLocked:595 com.android.server.wm.WindowManagerService.updateFocusedWindowLocked:6810 com.android.server.wm.WindowManagerService.relayoutWindow:2820 com.android.server.wm.Session.relayout:274 
+07-25 09:35:43.834  1406  2063 D MARsPolicyManager: onPackageResumedFG pkgName = com.whatsapp, userId = 0
+07-25 09:35:43.835  1406  2063 I WindowManager: Cancelling animation restarting=true, leash=Surface(name=Surface(name=3c0fa02 StatusBar)/@0x4f53486 - animation-leash of insets_animation)/@0x9b8c316
+07-25 09:35:43.835  1406  2063 I WindowManager: Reparenting to original parent: Surface(name=WindowToken{d20aee4 type=2000 android.os.BinderProxy@ae08c76})/@0x80c6147, destroy=false, surface=Surface(name=3c0fa02 StatusBar)/@0x4f53486
+07-25 09:35:43.835  1406  2063 I WindowManager: Reparenting to leash, surface=Surface(name=3c0fa02 StatusBar)/@0x4f53486, leashParent=Surface(name=WindowToken{d20aee4 type=2000 android.os.BinderProxy@ae08c76})/@0x80c6147
+07-25 09:35:43.836  1406  2063 D WindowManager: makeSurface duration=0 leash=Surface(name=Surface(name=3c0fa02 StatusBar)/@0x4f53486 - animation-leash of insets_animation)/@0x3ac4a6c
+07-25 09:35:43.836  1406  2063 I WindowManager: Cancelling animation restarting=true, leash=Surface(name=Surface(name=fb5b268 NavigationBar0)/@0x62b29d - animation-leash of insets_animation)/@0x5eb5684
+07-25 09:35:43.836  1406  2063 I WindowManager: Reparenting to original parent: Surface(name=WindowToken{1ec5b5a type=2019 android.os.BinderProxy@1ff0e02})/@0xee01312, destroy=false, surface=Surface(name=fb5b268 NavigationBar0)/@0x62b29d
+07-25 09:35:43.836  1406  2063 I WindowManager: Reparenting to leash, surface=Surface(name=fb5b268 NavigationBar0)/@0x62b29d, leashParent=Surface(name=WindowToken{1ec5b5a type=2019 android.os.BinderProxy@1ff0e02})/@0xee01312
+07-25 09:35:43.837  1406  2063 D WindowManager: makeSurface duration=0 leash=Surface(name=Surface(name=fb5b268 NavigationBar0)/@0x62b29d - animation-leash of insets_animation)/@0xaa394ca
+07-25 09:35:43.837  1406  2063 D StatusBarManagerService: notifyRequestedSystemKey recent=false home=false
+07-25 09:35:43.988  1406  4181 D WindowManager: finishDrawingWindow: Window{d24ca40 u0 com.whatsapp/com.whatsapp.Conversation} mDrawState=DRAW_PENDING seqId=0
+07-25 09:35:43.991  1406  1429 D WindowManager: Loading animation for app transition. transit=TRANSIT_OLD_ACTIVITY_OPEN enter=false frame=Rect(0, 0 - 720, 1600) insets=Rect(0, 58 - 0, 28) surfaceInsets=Rect(0, 0 - 0, 0)
+07-25 09:35:43.992  1406  1429 I WindowManager: Reparenting to leash, surface=Surface(name=ActivityRecord{41365b5 u0 com.whatsapp/.home.ui.HomeActivity} t17419})/@0xca40c8, leashParent=Surface(name=Task=17419)/@0x86bae24
+07-25 09:35:43.992  1406  1429 D WindowManager: makeSurface duration=1 leash=Surface(name=Surface(name=ActivityRecord{41365b5 u0 com.whatsapp/.home.ui.HomeActivity} t17419})/@0xca40c8 - animation-leash of app_transition)/@0x492b2b1
+07-25 09:35:43.993  1406  1429 D WindowManager: Loading animation for app transition. transit=TRANSIT_OLD_ACTIVITY_OPEN enter=true frame=Rect(0, 0 - 720, 1600) insets=Rect(0, 58 - 0, 28) surfaceInsets=Rect(0, 0 - 0, 0)
+07-25 09:35:43.996  1406  1429 I WindowManager: Reparenting to leash, surface=Surface(name=ActivityRecord{b096bc2 u0 com.whatsapp/.Conversation} t17419})/@0xe637b04, leashParent=Surface(name=Task=17419)/@0x86bae24
+07-25 09:35:43.997  1406  1429 D WindowManager: makeSurface duration=0 leash=Surface(name=Surface(name=ActivityRecord{b096bc2 u0 com.whatsapp/.Conversation} t17419})/@0xe637b04 - animation-leash of app_transition)/@0x8eec8ed
+07-25 09:35:43.998  1406  1429 D ActivityTaskManager: mStartingWindow and mStartingData is null for token=ActivityRecord{b096bc2 u0 com.whatsapp/.Conversation} t17419}
+07-25 09:35:43.999  1406  1429 V WindowManager: performShowLocked: mDrawState=HAS_DRAWN in Window{d24ca40 u0 com.whatsapp/com.whatsapp.Conversation}
+07-25 09:35:43.999  1406  1425 I Pageboost: Launch time gathered : pid 17175 com.whatsapp 300
+07-25 09:35:44.005  1406  1429 D ActivityTaskManager: mStartingWindow and mStartingData is null for token=ActivityRecord{b096bc2 u0 com.whatsapp/.Conversation} t17419}
+07-25 09:35:44.072  1406  4181 V InputMethodManagerService: startInputOrWindowGainedFocusInternalLocked: reason=WINDOW_FOCUS_GAIN clientState=ca17c96 attribute=android.view.inputmethod.EditorInfo@c8528a5 startInputFlags=VIEW_HAS_FOCUS|IS_TEXT_EDITOR|INITIAL_CONNECTION softInputMode=STATE_UNCHANGED|ADJUST_RESIZE|IS_FORWARD_NAVIGATION windowFlags=#81810100 sameWindowFocused=false
+07-25 09:35:44.073  1406  4181 V InputMethodManagerService: Window asks to unchanged
+07-25 09:35:44.073  1406  4181 D InputMethodManagerService: shouldShowImeSwitcherLocked : checking vis : 3
+07-25 09:35:44.075  1406  4181 D RestrictionPolicy: isScreenCaptureEnabled : ret=true userId=0
+07-25 09:35:44.077  1406  4181 I WindowManager: Cancelling animation restarting=true, leash=Surface(name=Surface(name=48b9c38 InputMethod)/@0x888d976 - animation-leash of insets_animation)/@0x61dc6
+07-25 09:35:44.077  1406  4181 I WindowManager: Reparenting to original parent: Surface(name=WindowToken{4b191c8 type=2011 android.os.Binder@e0c26b})/@0xbcabb77, destroy=false, surface=Surface(name=48b9c38 InputMethod)/@0x888d976
+07-25 09:35:44.077  1406  4181 I WindowManager: Reparenting to leash, surface=Surface(name=48b9c38 InputMethod)/@0x888d976, leashParent=Surface(name=WindowToken{4b191c8 type=2011 android.os.Binder@e0c26b})/@0xbcabb77
+07-25 09:35:44.078  1406  4181 D WindowManager: makeSurface duration=1 leash=Surface(name=Surface(name=48b9c38 InputMethod)/@0x888d976 - animation-leash of insets_animation)/@0x3941088
+07-25 09:35:44.116  1406  1620 D ActivityManagerPerformance: AMP_acquire() TAIL
+07-25 09:35:44.116  1406  1620 D ActivityManagerPerformance: AMP_release() ACT_START
+07-25 09:35:44.309  1406  4181 I ActivityManager: Changes in 10090 19 to 5, 0 to 8
+07-25 09:35:44.335  2339  2587 W ActivityThread: Failed to find provider info for com.sec.badge (user not unlocked)
+07-25 09:35:44.403  4178  4178 I SDHMS:LOAD: type: LoadsFreqs, value: 0:0:11:1413839:2000000:850000:1226480:1800000:500000:79:383:0
+07-25 09:35:44.436  1406  1429 I WindowManager: Reparenting to original parent: Surface(name=Task=17419)/@0x86bae24, destroy=true, surface=Surface(name=ActivityRecord{41365b5 u0 com.whatsapp/.home.ui.HomeActivity} t17419})/@0xca40c8
+07-25 09:35:44.436  1406  1429 V WindowManager: Setting visibility of Window{d531311 u0 com.whatsapp/com.whatsapp.home.ui.HomeActivity}: false, caller=com.android.server.wm.WindowContainer.sendAppVisibilityToClients:1246 com.android.server.wm.WindowToken.setClientVisible:431 com.android.server.wm.ActivityRecord.setClientVisible:7691 com.android.server.wm.ActivityRecord.onAnimationFinished:8590 com.android.server.wm.WindowContainer$$ExternalSyntheticLambda4.onAnimationFinished:2 
+07-25 09:35:44.437  1406  1429 I WindowManager: Reparenting to original parent: Surface(name=Task=17419)/@0x86bae24, destroy=true, surface=Surface(name=ActivityRecord{b096bc2 u0 com.whatsapp/.Conversation} t17419})/@0xe637b04
+07-25 09:35:44.488  1406  4262 E WindowManager: win=Window{d531311 u0 com.whatsapp/com.whatsapp.home.ui.HomeActivity} destroySurfaces: appStopped=true cleanupOnResume=false win.mWindowRemovalAllowed=false win.mRemoveOnExit=false win.mViewVisibility=8 caller=com.android.server.wm.ActivityRecord.destroySurfaces:6539 com.android.server.wm.ActivityRecord.destroySurfaces:6520 com.android.server.wm.ActivityRecord.notifyAppStopped:6584 com.android.server.wm.ActivityRecord.activityStopped:7172 com.android.server.wm.ActivityClientController.activityStopped:269 android.app.IActivityClientController$Stub.onTransact:613 com.android.server.wm.ActivityClientController.onTransact:147 
+07-25 09:35:44.488  1406  4262 I WindowManager: Destroying surface Surface(name=com.whatsapp/com.whatsapp.home.ui.HomeActivity$_17175)/@0x7a77c59 called by com.android.server.wm.WindowStateAnimator.destroySurface:942 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:536 com.android.server.wm.WindowState.destroySurfaceUnchecked:4309 com.android.server.wm.WindowState.destroySurface:4283 com.android.server.wm.ActivityRecord.destroySurfaces:6539 com.android.server.wm.ActivityRecord.destroySurfaces:6520 com.android.server.wm.ActivityRecord.notifyAppStopped:6584 com.android.server.wm.ActivityRecord.activityStopped:7172 
+07-25 09:35:44.489  1406  4262 D ActivityTaskManager: mStartingWindow and mStartingData is null for token=ActivityRecord{41365b5 u0 com.whatsapp/.home.ui.HomeActivity} t17419}
+07-25 09:35:44.579  1406  1428 D SGM:GameManager: identifyForegroundApp. com.whatsapp, mCurrentUserId: 0, callerUserId: 0
+07-25 09:35:44.579  1406  1428 D SGM:PkgDataHelper: getGamePkgData(). com.whatsapp
+07-25 09:35:44.579  1406  1428 D SGM:SemGameManager: isForegroundGame(), ret=false
+07-25 09:35:44.612  2339  2587 W ActivityThread: Failed to find provider info for com.sec.badge (user not unlocked)
+07-25 09:35:45.036   578   578 D io_stats: !@ 179,0 r 596325852 8450798394 w 120771005 1111793720 d 0 0 f 0 0 iot 165150268 0 th 0 0 0 pt 0 inp 0 0 1667275.355
+07-25 09:35:46.639  1406  1464 D PowerManagerService: UserActivityStateListenerState: 0
+07-25 09:35:47.012  1406  1819 I Pageboost: Launcher App Execution
+07-25 09:35:47.037   578   578 D io_stats: !@ 179,0 r 596325853 8450798418 w 120771016 1111793756 d 0 0 f 0 0 iot 165150272 0 th 0 0 0 pt 0 inp 0 0 1667277.356
+07-25 09:35:47.475  1406  1625 D PowerManagerService: [api] userActivityFromNative :  (event: 2 flags: 0 displayId: 0) eventTime = 1667277792
+07-25 09:35:47.475  1406  1625 D PowerManagerService: UserActivityStateListenerState: 1
+07-25 09:35:47.989  1406  1406 D SGM:GameManager: identifyGamePackage. com.whatsapp, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.android.server.ssrm.fgapps.GameAppUtils.isGame(GameAppUtils.java:84)
+07-25 09:35:47.989  1406  1406 D SGM:PkgDataHelper: getGamePkgData(). com.whatsapp
+07-25 09:35:47.990  1406  1406 D SGM:GameManager: identifyGamePackage. com.whatsapp, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.android.server.ssrm.fgapps.GameAppUtils.isGame(GameAppUtils.java:84)
+07-25 09:35:47.990  1406  1406 D SGM:PkgDataHelper: getGamePkgData(). com.whatsapp
+07-25 09:35:48.385  1406  1406 D SGM:GameManager: identifyGamePackage. com.whatsapp, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.android.server.ssrm.fgapps.GameAppUtils.isGame(GameAppUtils.java:84)
+07-25 09:35:48.385  1406  1406 D SGM:PkgDataHelper: getGamePkgData(). com.whatsapp
+07-25 09:35:48.386  1406  1406 D SGM:GameManager: identifyGamePackage. com.whatsapp, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.android.server.ssrm.fgapps.GameAppUtils.isGame(GameAppUtils.java:84)
+07-25 09:35:48.386  1406  1406 D SGM:PkgDataHelper: getGamePkgData(). com.whatsapp
+07-25 09:35:48.652  1406  1625 D PowerManagerService: [api] userActivityFromNative :  (event: 2 flags: 0 displayId: 0) eventTime = 1667278970
+07-25 09:35:48.812  1406  1406 D SGM:GameManager: identifyGamePackage. com.whatsapp, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.android.server.ssrm.fgapps.GameAppUtils.isGame(GameAppUtils.java:84)
+07-25 09:35:48.812  1406  1406 D SGM:PkgDataHelper: getGamePkgData(). com.whatsapp
+07-25 09:35:48.813  1406  1406 D SGM:GameManager: identifyGamePackage. com.whatsapp, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.android.server.ssrm.fgapps.GameAppUtils.isGame(GameAppUtils.java:84)
+07-25 09:35:48.813  1406  1406 D SGM:PkgDataHelper: getGamePkgData(). com.whatsapp
+07-25 09:35:49.037   578   578 D io_stats: !@ 179,0 r 596325864 8450798650 w 120771039 1111793892 d 0 0 f 0 0 iot 165150296 0 th 0 0 0 pt 0 inp 0 0 1667279.357
+07-25 09:35:49.541  1406  1406 D SGM:GameManager: identifyGamePackage. com.whatsapp, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.android.server.ssrm.fgapps.GameAppUtils.isGame(GameAppUtils.java:84)
+07-25 09:35:49.541  1406  1406 D SGM:PkgDataHelper: getGamePkgData(). com.whatsapp
+07-25 09:35:49.542  1406  1406 D SGM:GameManager: identifyGamePackage. com.whatsapp, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.android.server.ssrm.fgapps.GameAppUtils.isGame(GameAppUtils.java:84)
+07-25 09:35:49.542  1406  1406 D SGM:PkgDataHelper: getGamePkgData(). com.whatsapp
+07-25 09:35:49.726  1406  4181 D PhoneWindowManagerExt: haptic generated by application
+07-25 09:35:49.757  4178  5268 I SDHMS:D : SIOP:: AP:337 BAT:335 USB:0 CHG:357 PA:339 BLK:0 SUBBAT:0 SKIN:352 SKINF:352 SKINB:352 LRP:353 LRP2:352 LRF:353 LRB:353 LRF2:352 LRB2:352 AP2:352 CHG2:349 WIFI2:352 SPK2:327 VAP:343 
+07-25 09:35:50.455  1406  1625 D PowerManagerService: [api] userActivityFromNative :  (event: 2 flags: 0 displayId: 0) eventTime = 1667280773
+07-25 09:35:50.567  1406  1406 D SGM:GameManager: identifyGamePackage. com.whatsapp, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.android.server.ssrm.fgapps.GameAppUtils.isGame(GameAppUtils.java:84)
+07-25 09:35:50.567  1406  1406 D SGM:PkgDataHelper: getGamePkgData(). com.whatsapp
+07-25 09:35:50.568  1406  1406 D SGM:GameManager: identifyGamePackage. com.whatsapp, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.android.server.ssrm.fgapps.GameAppUtils.isGame(GameAppUtils.java:84)
+07-25 09:35:50.568  1406  1406 D SGM:PkgDataHelper: getGamePkgData(). com.whatsapp
+07-25 09:35:50.616  1406  1434 I ActivityManager: Changes in 10090 5 to 15, 8 to 0
+07-25 09:35:50.956 22595 22595 I wpa_supplicant: Heartbeat 465
+07-25 09:35:51.004  1406  1406 D SGM:GameManager: identifyGamePackage. com.whatsapp, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.android.server.ssrm.fgapps.GameAppUtils.isGame(GameAppUtils.java:84)
+07-25 09:35:51.004  1406  1406 D SGM:PkgDataHelper: getGamePkgData(). com.whatsapp
+07-25 09:35:51.005  1406  1406 D SGM:GameManager: identifyGamePackage. com.whatsapp, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.android.server.ssrm.fgapps.GameAppUtils.isGame(GameAppUtils.java:84)
+07-25 09:35:51.005  1406  1406 D SGM:PkgDataHelper: getGamePkgData(). com.whatsapp
+07-25 09:35:51.037   578   578 D io_stats: !@ 179,0 r 596325885 8450798914 w 120771039 1111793892 d 0 0 f 0 0 iot 165150300 0 th 0 0 0 pt 0 inp 0 0 1667281.357
+07-25 09:35:51.102  1406  4262 D PhoneWindowManagerExt: haptic generated by application
+07-25 09:35:51.476  1406  1406 D SGM:GameManager: identifyGamePackage. com.whatsapp, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.android.server.ssrm.fgapps.GameAppUtils.isGame(GameAppUtils.java:84)
+07-25 09:35:51.476  1406  1406 D SGM:PkgDataHelper: getGamePkgData(). com.whatsapp
+07-25 09:35:51.478  1406  1406 D SGM:GameManager: identifyGamePackage. com.whatsapp, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.android.server.ssrm.fgapps.GameAppUtils.isGame(GameAppUtils.java:84)
+07-25 09:35:51.478  1406  1406 D SGM:PkgDataHelper: getGamePkgData(). com.whatsapp
+07-25 09:35:51.614  1406  1625 D PowerManagerService: [api] userActivityFromNative :  (event: 2 flags: 0 displayId: 0) eventTime = 1667281932
+07-25 09:35:52.221  1406  1406 D SGM:GameManager: identifyGamePackage. com.whatsapp, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.android.server.ssrm.fgapps.GameAppUtils.isGame(GameAppUtils.java:84)
+07-25 09:35:52.221  1406  1406 D SGM:PkgDataHelper: getGamePkgData(). com.whatsapp
+07-25 09:35:52.222  1406  1406 D SGM:GameManager: identifyGamePackage. com.whatsapp, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.android.server.ssrm.fgapps.GameAppUtils.isGame(GameAppUtils.java:84)
+07-25 09:35:52.222  1406  1406 D SGM:PkgDataHelper: getGamePkgData(). com.whatsapp
+07-25 09:35:52.318  1406  4181 D PhoneWindowManagerExt: haptic generated by application
+07-25 09:35:53.038   578   578 D io_stats: !@ 179,0 r 596325893 8450799178 w 120771040 1111793896 d 0 0 f 0 0 iot 165150304 0 th 0 0 0 pt 0 inp 0 0 1667283.358
+07-25 09:35:54.471  4178  4178 I SDHMS:LOAD: type: LoadsFreqs, value: 0:0:18:1214560:2000000:850000:1075960:1800000:500000:77:299:0
